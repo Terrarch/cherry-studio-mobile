@@ -1,60 +1,97 @@
-
-### **完整 README 顶部：**
-
 ```markdown
-# 🍒 Cherry Studio Web
+<div align="center">
 
-[![Browsers](https://img.shields.io/badge/Browsers-Chrome%20%7C%20Safari%20%7C%20Firefox%20%7C%20Edge-blue)]()
-[![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8?logo=pwa)]()
-[![Live](https://img.shields.io/badge/Live-cherrystudio.app-brightgreen)]()
-[![License](https://img.shields.io/badge/License-MIT-blue)]()
+# 🍒 Cherry Studio Mobile
+### Next-Gen AI Agent Platform for Mobile Web & PWA
 
-**AI Agent + Web-First + Real-Time Collaboration**
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)](https://github.com/Terrarch/cherry-studio-mobile)
+[![PWA](https://img.shields.io/badge/PWA-Ready-5A0FC8?style=flat-square&logo=pwa&logoColor=white)]()
+[![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android%20%7C%20Web-brightgreen?style=flat-square)]()
+[![License](https://img.shields.io/badge/License-MIT-grey?style=flat-square)]()
 
-个人/企业级 Web AI 平台，提供浏览器原生 AI 代理、实时协作与云端模型统一访问。无需安装，即开即用。
+**无需安装 · 即开即用 · 原生体验**
+<br/>
+为移动端重构的轻量级 AI 协作平台。支持 PWA 安装，离线优先，数据本地化。
 
-## 🌟 核心特性
+[立即体验 (Live Demo) 🚀](#) · [报告问题 🐛](https://github.com/Terrarch/cherry-studio-mobile/issues) · [加入我们 💬](#community)
 
-🌐 **全浏览器支持**
-- 🔵 Chrome / Edge (Chromium 90+)
-- 🟣 Safari 15+ (安卓/macOS / iOS / iPadOS)
-- 🟠 Firefox 88+
-- 🟢 Opera / Brave / Arc
+---
 
-⚡ **Web 原生能力**
-- 📲 PWA 渐进式应用（可安装到桌面）
-- ☁️ 云端同步（跨设备无缝切换）
-- 🔒 本地优先数据存储
-- 🎨 响应式设计（支持平板/手机浏览器）
+### 📱 加入开发者 / 用户交流群
 
-🤝 **实时协作**
-- 多人在线共享对话
-- WebSocket 实时通信
-- 团队工作区管理
+<img src="https://sss.inyu.top/img/2026/01/12/113312_69646b789588a.jpg" width="200" alt="WeChat QR Code" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
-🔐 **企业级安全**
-- 端到端加密
-- SSO 单点登录
-- 私有化部署支持
+扫描二维码加入微信群，获取最新内测资格与技术支持
 
-## 🚀 快速体验
+</div>
 
-### 在线使用
-🔗 **立即访问：** [https://#](链接)
+## ✨ 核心亮点 (Highlights)
 
-### 浏览器兼容性
+| ⚡ **极致性能** | 🎨 **原生体验** | 🔐 **隐私安全** |
+| :--- | :--- | :--- |
+| **WebAssembly** 驱动<br>启动速度 < 1s<br>极低内存占用 | **Material Design 3**<br>自适应深色模式<br>平滑手势交互 | **Local-First** 架构<br>对话记录本地存储<br>端到端加密传输 |
 
-| 浏览器 | 桌面版 | 移动版 | 推荐版本 |
-|--------|-------|-------|---------|
-| 🔵 **Chrome** | ✅ | ✅ | 90+ |
-| 🟣 **Safari** | ✅ | ✅ | 15+ |
-| 🟠 **Firefox** | ✅ | ✅ | 88+ |
-| 🔷 **Edge** | ✅ | ✅ | 90+ |
-| 📱 **移动浏览器** | - | ✅ | iOS Safari 15+ / Chrome Mobile |
+| 🌐 **全端覆盖** | 🧠 **模型聚合** | 🤝 **实时协作** |
+| :--- | :--- | :--- |
+| iOS / Android PWA<br>PC 浏览器深度适配<br>多端数据云同步 | GPT-4 / Claude 3<br>Ollama 本地模型<br>自定义 API 接入 | WebSocket 实时流<br>多人共享会话<br>团队工作区管理 |
 
-### 本地开发
+## 📲 兼容性矩阵 (Compatibility)
+
+Cherry Studio 针对移动端浏览器内核进行了深度优化。
+
+| 平台 | 浏览器环境 | 最低版本 | PWA 支持 | 触摸优化 |
+|:---|:---|:---:|:---:|:---:|
+| **iOS / iPadOS** | Safari (WebKit) | 15.0+ | ✅ | ✅ |
+| **Android** | Chrome Mobile | 90+ | ✅ | ✅ |
+| **HarmonyOS** | 华为浏览器 | 4.0+ | ✅ | ✅ |
+| **Desktop** | Edge / Chrome / Arc | 90+ | ✅ | - |
+
+## 🛠️ 开发者指南 (Engineering)
+
+本项目采用现代 Web 技术栈构建，专为高性能移动网页设计。
+
+### 技术栈架构
+- **Core:** TypeScript + React 18 / Vue 3
+- **State:** Zustand / Pinia (Persist flow)
+- **Styling:** TailwindCSS + Mobile UI Kit
+- **Build:** Vite (ESM)
+
+### 快速启动环境
+
+如果您是开发者并希望贡献代码，请按以下标准化流程操作：
+
 ```bash
-git clone https://github.com/你的用户名/cherrystudio-web.git
-cd cherrystudio-web
-npm install
-npm run dev
+# 1. 获取源代码
+git clone https://github.com/Terrarch/cherry-studio-mobile.git
+cd cherry-studio-mobile
+
+# 2. 初始化工程依赖 (推荐 pnpm 以获得更快的安装速度)
+npm install -g pnpm
+pnpm install
+
+# 3. 启动本地开发服务器 (带有 HMR 热更新)
+pnpm dev
+
+# >  Local:   http://localhost:5173
+# >  Network: http://192.168.x.x:5173  <-- 手机连接此局域网地址预览
+```
+
+### 构建与部署
+
+```bash
+# 生成生产环境代码 (自动 gzip 压缩与 Tree-shaking)
+pnpm build
+
+# 本地预览生产构建
+pnpm preview
+```
+
+## 📄 开源协议
+
+本项目基于 [MIT License](LICENSE) 开源。允许个人或商业用途的修改与分发。
+
+---
+<div align="center">
+Designed with ❤️ by Terrarch Team
+</div>
+```
